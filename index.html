@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" type="image/png" href="/asset/programming-code-signs.png">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="logo">
+               <a href="./index.html" class="logo2">Destiny's Portfolio</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="#" class="active" onclick="setActive(this)">home</a></li>
+                  <li><a href="#about"  onclick="setActive(this)">about</a></li>
+                  <li><a href="#services" onclick="setActive(this)">services</a></li>
+                  <li><a href="#projects" onclick="setActive(this)">projects</a></li>
+                  <li><a href="#contact" onclick="setActive(this)">contact</a></li>
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+ <script src="main.js"></script>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="/asset/codecode.jpg" alt="profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Eze-chikwe Destiny</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('asset/cv12345.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" href="#contact"  onclick="scrollToContact()" >
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="/asset/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/destiny-eze-chikwe-314410244'"
+        />
+        <img
+          src="/asset/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/seni0rDEV'"
+        />
+      </div>
+    </div>
+  </section><hr class="horizontal_line"><br><br><br>
+
+  <section class="about_me" id="about">
+    <h1 class="about_me_heading">About Me</h1>
+    <div class="about_me_picture">
+      <img src="/asset/vector-flat-illustration-software-developer-cyber-program-security_776789-211.avif" alt="about me image" class="about_me_img">
+    </div>
+  </section>
+
+  <section id="contact">
+
+</section>
+  
+</body>
+</html>
